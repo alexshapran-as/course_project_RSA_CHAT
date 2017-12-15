@@ -1,2 +1,3 @@
-# course_project_RSA_CHAT
-Cross-platform application (android and PC) - chat with rsa encryption
+# Алгоритмические языки. Курсовой проект
+# Чат с шифрованием RSA
+Группа: ИУ8 - 34
