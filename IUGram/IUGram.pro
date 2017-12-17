@@ -31,13 +31,21 @@ SOURCES += \
         iugram.cpp \
     settings.cpp \
     secondwindow.cpp \
-    chatwindow.cpp
+    chatwindow.cpp \
+    client.cpp \
+    connection.cpp \
+    peermanager.cpp \
+    server.cpp
 
 HEADERS += \
         iugram.h \
     settings.h \
     secondwindow.h \
-    chatwindow.h
+    chatwindow.h \
+    client.h \
+    connection.h \
+    peermanager.h \
+    server.h
 
 FORMS += \
         iugram.ui \
