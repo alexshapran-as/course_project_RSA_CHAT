@@ -1,13 +1,10 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-12-13T22:24:14
+# Project created by QtCreator 2017-12-15T14:19:36
 #
 #-------------------------------------------------
 
 QT       += core gui
-
-# Подключение модуля network для работы с сетью
-QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,36 +26,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         iugram.cpp \
-    settings.cpp \
     secondwindow.cpp \
-    chatwindow.cpp
+    settings.cpp \
+    chatwindow.cpp \
+    rsa.cpp
 
 HEADERS += \
         iugram.h \
-    settings.h \
     secondwindow.h \
-    chatwindow.h
+    settings.h \
+    chatwindow.h \
+    rsa.h
 
 FORMS += \
         iugram.ui \
-    settings.ui \
     secondwindow.ui \
+    settings.ui \
     chatwindow.ui
 
 CONFIG += mobility
+CONFIG += c++11
 MOBILITY = 
 
 RESOURCES += \
     resources.qrc
-
-DISTFILES += \
-    android/AndroidManifest.xml \
-    android/gradle/wrapper/gradle-wrapper.jar \
-    android/gradlew \
-    android/res/values/libs.xml \
-    android/build.gradle \
-    android/gradle/wrapper/gradle-wrapper.properties \
-    android/gradlew.bat
-
-ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
