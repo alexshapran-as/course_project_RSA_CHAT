@@ -4,6 +4,8 @@
 #include <QtCore/QSettings>
 #include <QtNetwork/QNetworkConfigurationManager>
 #include <QtNetwork/QNetworkSession>
+#include <QDesktopWidget>
+
 
 int main(int argc, char *argv[])
 {
@@ -11,17 +13,18 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     QNetworkConfigurationManager manager;
-    if (manager.capabilities() & QNetworkConfigurationManager::NetworkSessionRequired) {
-        // Get saved network configuration
+    if (manager.capabilities() & QNetworkConfigurationManager::NetworkSessionRequired)
+    {
+        // Получение сохраненных настроек сети
         QSettings settings(QSettings::UserScope, QLatin1String("QtProject"));
         settings.beginGroup(QLatin1String("QtNetwork"));
         const QString id = settings.value(QLatin1String("DefaultNetworkConfiguration")).toString();
         settings.endGroup();
 
-        // If the saved network configuration is not currently discovered use the system default
+        // Если сохраненные настройки сети не были найдены, то используются системные по умолчанию
         QNetworkConfiguration config = manager.configurationFromIdentifier(id);
-        if ((config.state() & QNetworkConfiguration::Discovered) !=
-            QNetworkConfiguration::Discovered) {
+        if ((config.state() & QNetworkConfiguration::Discovered) != QNetworkConfiguration::Discovered)
+        {
             config = manager.defaultConfiguration();
         }
 
@@ -29,14 +32,17 @@ int main(int argc, char *argv[])
         networkSession->open();
         networkSession->waitForOpened();
 
-        if (networkSession->isOpen()) {
-            // Save the used configuration
+        if (networkSession->isOpen())
+        {
+            // Сохранение использованных настроек
             QNetworkConfiguration config = networkSession->configuration();
             QString id;
-            if (config.type() == QNetworkConfiguration::UserChoice) {
-                id = networkSession->sessionProperty(
-                        QLatin1String("UserChoiceConfiguration")).toString();
-            } else {
+            if (config.type() == QNetworkConfiguration::UserChoice)
+            {
+                id = networkSession->sessionProperty(QLatin1String("UserChoiceConfiguration")).toString();
+            }
+            else
+            {
                 id = config.identifier();
             }
 

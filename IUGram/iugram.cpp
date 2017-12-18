@@ -31,8 +31,8 @@ void set_list_of_users()
 //    QString temp_list_of_users;
 //    temp_list_of_users.push_back(reply->readAll());
     QVector<QPair<QString, QString>> local_users;
-    local_users.push_back(QPair<QString, QString>("S228H1488", "Sasha"));
-    local_users.push_back(QPair<QString, QString>("AK777", "AKosoj"));
+    local_users.push_back(QPair<QString, QString>("S", "Sasha"));
+    local_users.push_back(QPair<QString, QString>("A", "AKosoj"));
     for (auto it : local_users)
     {
         list_of_users.push_back(qMakePair(it.first,it.second));

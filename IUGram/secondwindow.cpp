@@ -74,3 +74,9 @@ void SecondWindow::on_listWidget_itemClicked(QListWidgetItem *item)
     this->close();
     chat_window->show();
 }
+
+// Нажатие кнопки ОК
+void SecondWindow::on_lineEdit_returnPressed()
+{
+    on_pushButton_clicked();
+}

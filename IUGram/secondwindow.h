@@ -22,6 +22,8 @@ private slots:
 
     void on_listWidget_itemClicked(QListWidgetItem *item);
 
+    void on_lineEdit_returnPressed();
+
 private:
     Ui::SecondWindow *ui;
 };

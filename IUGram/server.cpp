@@ -6,6 +6,7 @@
 Server::Server(QObject *parent)
     : QTcpServer(parent)
 {
+    // Прослушивание порта
     listen(QHostAddress::Any);
 }
 
