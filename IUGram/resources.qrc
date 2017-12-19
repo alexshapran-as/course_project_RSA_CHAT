@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/firstwindow.png</file>
+        <file>images/firstwindow_input_field.png</file>
+        <file>images/firstwindow_push_button1.png</file>
+        <file>images/firstwindow_push_button_settings.png</file>
+        <file>images/secondwindow.png</file>
+        <file>images/settingswindow.png</file>
+        <file>images/settingswindow_back_button.png</file>
+        <file>images/settingswindow_save_button.png</file>
+        <file>images/secondwindow_close.png</file>
+        <file>images/secondwindow_search.png</file>
+        <file>images/chatwindow.png</file>
+        <file>images/chatwindow_back_button.png</file>
+        <file>images/chatwindow_send_button.png</file>
+        <file>images/firstwindow_logo.png</file>
+        <file>images/firstwindow_info.png</file>
+        <file>images/dialogsetkeys_buttons.png</file>
+    </qresource>
+</RCC>
