@@ -7,10 +7,13 @@
 #include <QObject>
 #include <QUdpSocket>
 
+const unsigned int width_widget = 19;
+
 enum MessageType {
   USUAL_MESSAGE, // Обычный текст
   PERSON_ONLINE, // Сообщение "Я-онлайн"
-  WHO_IS_ONLINE, // Запрос о статусе пользователей
+//  WHO_IS_ONLINE, // Запрос о статусе пользователей
+  KEYS_MESSAGE, // сообщение с ключами
 };
 
 namespace Ui {
@@ -41,6 +44,7 @@ private:
 
 private slots:
     void read();
+    void on_listWidget_itemClicked(QListWidgetItem *item);
 };
 
 #endif // CHATWINDOW_H
