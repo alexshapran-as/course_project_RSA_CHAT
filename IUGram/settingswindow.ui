@@ -20,10 +20,10 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>20</x>
       <y>70</y>
-      <width>111</width>
-      <height>51</height>
+      <width>81</width>
+      <height>61</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -36,7 +36,7 @@
         </sizepolicy>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-image: url(://images/settingswindow_back_button.png) 0 0 0 0 stretch stretch;</string>
+        <string notr="true">border-image: url(://images/chatwindow_back_button.png) 0 0 0 0 stretch stretch;</string>
        </property>
        <property name="text">
         <string/>
@@ -71,6 +71,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(://images/firstwindow_input_field.png) 0 0 0 0 stretch stretch;</string>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
