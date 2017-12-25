@@ -16,6 +16,9 @@
   <property name="styleSheet">
    <string notr="true">border-image: url(://images/secondwindow.png) 0 0 0 0 stretch stretch;</string>
   </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">

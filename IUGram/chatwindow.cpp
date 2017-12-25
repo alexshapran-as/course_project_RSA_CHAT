@@ -119,7 +119,7 @@ void ChatWindow::read()
             size = str.length() / width_widget + 1;
             for (unsigned int i = 0; i < size; ++i)
             {
-                str.insert(width_widget * i, "\n");
+                str.insert(width_widget * i, "-\n");
             }
         }
 
