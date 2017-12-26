@@ -2,4 +2,6 @@
 # Чат с шифрованием RSA
 Группа: ИУ8 - 34
 ----------------------------------------
-- add private chat
+- private chat
+- RSA encryption
+- RSA module: https://github.com/akosoj/RSA_MODULE_RELEASE
